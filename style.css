@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #222;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+
+.subject {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.input {
+    height: 40px;
+    width: 80%;
+    border: none;
+    outline: none;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: text;
+}
+
+.calc-div {
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.price-input {
+    width: calc(5 / 100%);
+    margin-right: 10px;
+}
+
+.total {
+    width: calc(5 / 100%);
+    display: flex;
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #ff0000;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.total::before {
+    content: "Total:";
+    margin-right: 3%;
+}
+
+.submit-btn,
+.delete-all-btn {
+    background-color: #ff0000;
+    color: #fff;
+    text-transform: uppercase;
+    width: 80%;
+    border: none;
+    outline: none;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.delete-all-btn {
+    display: none;
+}
+
+table {
+    width: 80%;
+    margin: 60px 0;
+}
+
+th {
+    text-transform: capitalize;
+}
+
+td {
+    text-align: center;
+}
+
+.btn {
+    background-color: #ff0000;
+    color: #fff;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+}
